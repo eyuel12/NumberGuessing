@@ -1,17 +1,25 @@
+import java.util.Random;
 import java.util.Scanner;
 
 public class NumberGuessing {
 
     public static void main(String[]args){
 
-        System.out.println("Give nme random number");
+        System.out.println("Give " +
+                "" +
+                "me random number");
 
         Scanner guessedNumber=new Scanner(System.in);
         int input=guessedNumber.nextInt();
 
         int pickedNumber;
 
+        
+
+
+
         pickedNumber = (int)(Math.random()*100);
+
 
         System.out.println(pickedNumber);
 
@@ -29,9 +37,14 @@ public class NumberGuessing {
 
             System.out.println("you have guessed the right number");
 
+
         }
 
-
+           for (input=0; input<pickedNumber; input+=){
+             System.out.println(
+                    input++
+             );
+           }
     }
 
 }
