@@ -14,37 +14,47 @@ public class NumberGuessing {
 
         int pickedNumber;
 
-        
-
-
-
         pickedNumber = (int)(Math.random()*100);
+        while (pickedNumber==input) {
+
+        
+            System.out.println(pickedNumber);
 
 
-        System.out.println(pickedNumber);
+            if (pickedNumber < input) {
 
-        if (pickedNumber<input){
+                System.out.println("The number you put is higher");
 
-            System.out.println("The number you put is higher");
+
+
+            } else if (pickedNumber > input) {
+
+                System.out.println("The number you have picked is lower");
+
+
+
+            }
+            if (pickedNumber == input) {
+
+                System.out.println("you have guessed the right number");
+
+
+            }
+
+
+
         }
-    else if (pickedNumber>input){
-
-            System.out.println("The number you have picked is lower");
 
 
-        }
-        if(pickedNumber==input){
-
-            System.out.println("you have guessed the right number");
+          }
+       }
 
 
-        }
 
-           for (input=0; input<pickedNumber; input+=){
-             System.out.println(
-                    input++
-             );
-           }
-    }
 
-}
+
+
+
+
+
+
