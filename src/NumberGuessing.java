@@ -1,24 +1,30 @@
-import java.util.Random;
+
 import java.util.Scanner;
 
 public class NumberGuessing {
 
-    public static void main(String[]args){
+    public static void main(String[] args) {
 
         System.out.println("Give " +
                 "" +
                 "me random number");
 
-        Scanner guessedNumber=new Scanner(System.in);
-        int input=guessedNumber.nextInt();
+        Scanner guessedNumber = new Scanner(System.in);
+        Integer input;
 
         int pickedNumber;
 
-        pickedNumber = (int)(Math.random()*100);
-        while (pickedNumber==input) {
+        pickedNumber = (int) (Math.random() * 100);
 
-        
-            System.out.println(pickedNumber);
+
+
+
+        System.out.println(pickedNumber);
+
+
+
+        do {
+            input = guessedNumber.nextInt();
 
 
             if (pickedNumber < input) {
@@ -26,11 +32,9 @@ public class NumberGuessing {
                 System.out.println("The number you put is higher");
 
 
-
             } else if (pickedNumber > input) {
 
                 System.out.println("The number you have picked is lower");
-
 
 
             }
@@ -40,21 +44,9 @@ public class NumberGuessing {
 
 
             }
+        }while (pickedNumber != input);
 
-
-
-        }
-
-
-          }
-       }
-
-
-
-
-
-
-
-
+    }
+}
 
 
