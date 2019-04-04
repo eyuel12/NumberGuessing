@@ -19,13 +19,10 @@ public class NumberGuessing {
 
 
 
-        System.out.println(pickedNumber);
-
 
 
         do {
             input = guessedNumber.nextInt();
-
 
             if (pickedNumber < input) {
 
@@ -44,6 +41,10 @@ public class NumberGuessing {
 
 
             }
+            if (input==pickedNumber){
+                System.out.println(pickedNumber);
+            }
+
         }while (pickedNumber != input);
 
     }
